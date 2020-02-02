@@ -14,6 +14,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -56,5 +57,30 @@
 
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  &__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    height: 23rem;
+
+    &--1 {
+      background-image:  linear-gradient(
+        to right bottom,
+        $color-secondary-light,
+        $color-secondary-dark
+      ), 
+      url(../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/nat-5.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/nat-5.jpg);
+    }
   }
 }
