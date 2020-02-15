@@ -28,4 +28,15 @@
   &__text {
     transform: skewX(12deg); 
   }
+
+  &__caption {
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 1.7rem;
+    text-align: center;
+  }
 }

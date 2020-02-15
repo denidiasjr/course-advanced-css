@@ -333,6 +333,15 @@ body {
     height: 100%; }
   .story__text {
     transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center; }
 
 .header {
   height: 95vh;
