@@ -330,7 +330,8 @@ body {
     transform: translate(-3rem) skewX(12deg); }
   .story__img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -338,10 +339,18 @@ body {
     text-transform: uppercase;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 20%);
     color: #fff;
     font-size: 1.7rem;
-    text-align: center; }
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__img {
+    filter: blur(3px) brightness(80%); }
 
 .header {
   height: 95vh;
