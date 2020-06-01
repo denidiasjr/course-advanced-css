@@ -42,3 +42,34 @@ aside {
 footer {
   background: darkslateblue;
 }
+
+/* Media queries */
+@media (min-width: 600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  main {
+    float: left;
+    width: 75%;
+  }
+  aside {
+    clear: both;
+  }
+}
+
+@media (min-width: 850px) {
+  main {
+    width: 50%;
+  }
+
+  aside {
+    width: 25%;
+    clear: none;
+    float: left;
+  }
+
+  footer {
+    clear: both;
+  }
+}
