@@ -25,20 +25,32 @@ h1, h2 {
 .container {
   color: white;
   font-family: helvetica, arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
   background: skyblue;
+  flex: 1 0 100%;
+  order: 1;
 }
 main {
   background: slategray;
+  order: 3;
+  flex: 1 1 500px;
 }
 nav {
   background: cadetblue;
+  order: 2;
+  flex: 1 0 200px;
 }
 aside {
   background: seagreen;
+  order: 4;
+  flex: 1 0 200px;
 }
 footer {
   background: darkslateblue;
+  flex: 1 0 100%;
+  order: 5;
 }
